@@ -1,0 +1,106 @@
+Train set size: 1000
+Test set size : 500
+
+===== Decision Tree =====
+Accuracy : 0.7120
+Precision: 0.9077
+Recall   : 0.4720
+F1-score : 0.6211
+Confusion Matrix:
+[[238  12]
+ [132 118]]
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0     0.6432    0.9520    0.7677       250
+         1.0     0.9077    0.4720    0.6211       250
+
+    accuracy                         0.7120       500
+   macro avg     0.7755    0.7120    0.6944       500
+weighted avg     0.7755    0.7120    0.6944       500
+
+
+===== AdaBoost + Decision Tree =====
+Accuracy : 0.8560
+Precision: 0.8678
+Recall   : 0.8400
+F1-score : 0.8537
+Confusion Matrix:
+[[218  32]
+ [ 40 210]]
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0     0.8450    0.8720    0.8583       250
+         1.0     0.8678    0.8400    0.8537       250
+
+    accuracy                         0.8560       500
+   macro avg     0.8564    0.8560    0.8560       500
+weighted avg     0.8564    0.8560    0.8560       500
+
+
+===== SVM (Linear Kernel) =====
+Accuracy : 0.6600
+Precision: 0.6600
+Recall   : 0.6600
+F1-score : 0.6600
+Confusion Matrix:
+[[165  85]
+ [ 85 165]]
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0     0.6600    0.6600    0.6600       250
+         1.0     0.6600    0.6600    0.6600       250
+
+    accuracy                         0.6600       500
+   macro avg     0.6600    0.6600    0.6600       500
+weighted avg     0.6600    0.6600    0.6600       500
+
+
+===== SVM (Polynomial Kernel) =====
+Accuracy : 0.7680
+Precision: 0.7519
+Recall   : 0.8000
+F1-score : 0.7752
+Confusion Matrix:
+[[184  66]
+ [ 50 200]]
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0     0.7863    0.7360    0.7603       250
+         1.0     0.7519    0.8000    0.7752       250
+
+    accuracy                         0.7680       500
+   macro avg     0.7691    0.7680    0.7678       500
+weighted avg     0.7691    0.7680    0.7678       500
+
+
+===== SVM (RBF Kernel) =====
+Accuracy : 0.9720
+Precision: 0.9683
+Recall   : 0.9760
+F1-score : 0.9721
+Confusion Matrix:
+[[242   8]
+ [  6 244]]
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0     0.9758    0.9680    0.9719       250
+         1.0     0.9683    0.9760    0.9721       250
+
+    accuracy                         0.9720       500
+   macro avg     0.9720    0.9720    0.9720       500
+weighted avg     0.9720    0.9720    0.9720       500
+
+
+================ Summary ================
+Model                            Accuracy  Precision     Recall   F1-score
+Decision Tree                      0.7120     0.9077     0.4720     0.6211
+AdaBoost + Decision Tree           0.8560     0.8678     0.8400     0.8537
+SVM (Linear Kernel)                0.6600     0.6600     0.6600     0.6600
+SVM (Polynomial Kernel)            0.7680     0.7519     0.8000     0.7752
+SVM (RBF Kernel)                   0.9720     0.9683     0.9760     0.9721
+
